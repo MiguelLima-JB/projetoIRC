@@ -1,0 +1,275 @@
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--color-dark-black);
+    font-family: sans-serif;
+}
+
+
+.logo {
+    min-height: 80px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.img-logo {
+    width: 100px;
+    height: 90px;
+}
+
+.md-menu {
+    min-height: 80px;
+    padding-top: 70px;
+}
+
+.md-menu ul {
+    text-align: center;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.md-menu ul>li {
+    display: inline-block;
+    font-size: 17px;
+    padding-right: 130px;
+}
+
+.md-menu a {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.md-menu a:hover {
+    opacity: 0.5;
+}
+
+.md-menu a::before {
+    content: '';
+    width: 90px;
+    height: 5px;
+    background-color: var(--color-dark-red);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 4px 4px 0 0;
+}
+
+
+.btn-dropdown {
+    width: 200px;
+    height: 60px;
+    background-color: var(--color-grey);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-right-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-dropdown:focus {
+    outline: 2px solid var(--color-dark-red);
+}
+
+.btn-dropdown p {
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu-ham {
+    width: 25px;
+    margin-top: 10px;
+    position: absolute;
+    top: 6px;
+    right: 50px;
+}
+
+
+.toggle-menu {
+    width: 100%;
+    max-width: 240px;
+    min-height: 250px;
+    background-color: rgba(0, 0, 0, 0.46);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+}
+
+.toggle-menu>ul>li {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toggle-menu>ul>li>a:hover {
+    color: var(--color-dark-red);
+}
+
+
+.menu-mobile-dropdown img {
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* SECTION CHAMADA */
+
+.chamada {
+    position: relative;
+}
+
+
+.chamada>img {
+    width: 100%;
+    height: 750px;
+}
+
+.setasSlide {
+    width: 100%;
+    min-height: 300px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+.setasSlide button {
+    border: 0;
+    background-color: transparent;
+}
+
+.setasSlide span {
+    color: white;
+    font-size: 243px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.bullets {
+    width: 380px;
+    height: 45px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--color-dark-black);
+    text-align: center;
+}
+
+.bullets div {
+    width: 60px;
+    height: 7px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/***** SESSÃO BANDAS ****/
+
+section.bandas {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 200px;
+    margin: 120px auto;
+    border-radius: 15px;
+    background-color: var(--color-grey);
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #cccccc54;
+}
+
+img.img-bandas {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.bandas span>a {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.bandas span>a:hover {
+    color: var(--color-dark-red);
+}
+
+/***** SECTION NOTICIAS ****/
+
+section.noticias {
+    width: 100%;
+    min-height: 900px;
+    text-align: center;
+}
+
+iframe {
+    margin: 30px auto;
+}
+
+/***** FOOTER ******/
+footer {
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 950px) {
+
+    .menu-dropdown {
+        display: none;
+    }
+
+    .md-menu {
+        display: none;
+    }
+
+
+    .img-logo {
+        width: 80px;
+        height: 70px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .menu-mobile-dropdown img {
+        display: block;
+    }
+
+
+}
+
+
+@media screen and (max-width: 780px) {}

@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* cores do site */
+:root {
+    --color-dark-red: #d4080b;
+    --color-dark-black: #090401;
+    --color-grey: #2b2a2a;
+
+}
+
+/**********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-dark-black);
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 1480px;
+    text-align: center;
+    padding: 0 2%;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w33 {
+    width: 33.3%;
+}
+
+.w50 {
+    width: 50%;
+}

@@ -1,0 +1,81 @@
+<header>
+
+    <div class="container d-flex">
+
+        <div class="logo">
+            <img class="img-logo" src='{{images.logo}}' alt="logo do IRC">
+        </div><!-- Logo -->
+        <nav class="md-menu">
+            <ul>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Bandas</a></li>
+                <li><a href="#">Campanhas</a></li>
+            </ul>
+        </nav> <!-- md-menu -->
+
+
+        <div class="menu-dropdown">
+
+            <button class="btn-dropdown" (click)="clickDropDown()">
+                <p>Explore</p>
+                <img class="menu-ham" src="images/menu-svgrepo-com.png">
+            </button>
+
+            <nav class="toggle-menu" *ngIf="dropTrue">
+                <ul>
+                    <li *ngFor="let item of menu "><a href="#">{{item}}</a></li>
+                </ul>
+            </nav> <!-- toggle-menu -->
+
+        </div><!-- menu-dropdown -->
+
+        <div class="menu-mobile-dropdown">
+            <img src="images/menu-svgrepo-com.png">
+        </div><!-- menu-mobile-dropdown -->
+
+    </div><!-- container -->
+
+</header>
+
+
+<section class="chamada">
+    <img [src]=banner>
+
+    <div class="setasSlide d-flex">
+        <button class="before" (click)="sliderBefore()">
+            <span aria-label="before">‹</span>
+        </button>
+        <button class="next" (click)="sliderNext()">
+            <span aria-label="next">›</span>
+        </button>
+    </div><!-- setasSlide -->
+
+    <div class="bullets">
+        <div [ngStyle]="{'background-color': colorBullet}"></div>
+        <div [ngStyle]="{'background-color': colorBullet1}"></div>
+        <div [ngStyle]="{'background-color': colorBullet2}"></div>
+    </div>
+</section><!-- chamada -->
+
+<section class="bandas">
+
+    @for(banda of bandas; track $index){
+    <img class="img-bandas" [src]=banda.imagem>
+
+    <span><a href="#">{{banda.nome}}</a></span>
+    }
+</section><!-- bandas -->
+
+<section class="noticias">
+
+    <iframe width="860" height="615" src="https://www.youtube.com/embed/PAVRJSosKe8?si=UZKiWvidk_kJkYPf"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+
+<footer>
+    <img class="img-logo" src='{{images.logo}}' alt="logo do IRC">
+    <p>&copy; Todos os direitos reservados</p>
+</footer>
