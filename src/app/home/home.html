@@ -21,11 +21,15 @@
                 <img class="menu-ham" src="images/menu-svgrepo-com.png">
             </button>
 
-            <nav class="toggle-menu" *ngIf="dropTrue">
+            @if (dropTrue) {
+            <nav class="toggle-menu">
                 <ul>
-                    <li *ngFor="let item of menu "><a href="#">{{item}}</a></li>
+                    @for (item of menu; track $index){
+                    <li><a href="#">{{item}}</a></li>
+                    }
                 </ul>
             </nav> <!-- toggle-menu -->
+            }
 
         </div><!-- menu-dropdown -->
 
