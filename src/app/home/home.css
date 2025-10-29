@@ -198,10 +198,16 @@ section.bandas {
 }
 
 img.img-bandas {
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: 100px;
     border-radius: 50%;
 
+}
+
+.bandas span {
+    width: 100%;
+    margin: 0 20px;
 }
 
 .bandas span>a {
@@ -219,11 +225,15 @@ img.img-bandas {
 section.noticias {
     width: 100%;
     min-height: 900px;
+    padding: 0 40px;
     text-align: center;
 }
 
 iframe {
-    margin: 30px auto;
+    width: 100%;
+    max-width: 1420px;
+    height: 700px;
+    margin: 30px 0;
 }
 
 /***** FOOTER ******/
@@ -240,8 +250,8 @@ footer p {
 }
 
 footer img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 }
 
 /* MEDIA QUERIES */
